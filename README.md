@@ -1,6 +1,9 @@
 # Projet Client-serveur
-## Technologies utilisées - theo
---- schema ---- + courte intro
+## Introduction
+
+Pour cette partie de la réalisation du projet, nous avions comme objectif de réaliser un pipeline. Le processus devait nous permettre de récupérer une image, la traiter et la restituer sous forme de .exe. Nous avons tout d’abord réalisé le pipeline en local sur notre IDE afin de bien identifier toutes les étapes. Cette première approche était primordiale avant de s’attaquer à la partie cloud. Nous avons ensuite intégré notre pipeline au cloud d’Amazon AWS. Nous avons utilisé les lambdas et S3 pour la partie traitement de l’image et récupération des informations du document, puis GitHub Actions pour la partie création de l’exécutable.
+Bien que ces missions nous semblassent simples au premier abord, nous nous sommes vite rendu compte de la complexité du cloud. Aujourd’hui, nous sommes à mi-parcours de la réalisation du projet. Nous avons maintenant comme objectif de commencer la partie automatisation par l’intelligence artificielle.
+
  ![shema pipeline](https://github.com/solenemorais/projetjs/blob/main/Capture%20d%E2%80%99e%CC%81cran%202021-01-28%20a%CC%80%2014.52.46.png)
 ### AWS  
 Afin de pouvoir déployer rapidement cette solution tout en gardant le contrôle. Nous avons choisi de faire appel à une **solution de cloud-computing avec AWS** notamment. Nous avons conteneurisé les différentes fonctionnalités de notre programme. Pour cela, nous avons utilisé les modules « **Lambda** » pour implémenter les fonctions, des module « **S3** » pour stocker les documents xlsx reçu et les xlsx après correction puis un module « DynamoDB » ou « RDS » pour la base de données qui sera à implémenter dans le futur. 
