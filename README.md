@@ -26,5 +26,8 @@ On peut utiliser Amazon S3 pour déclencher AWS Lambda afin que les données soi
 c'est une poche mais en anglais
 
 ### GitHub Actions - theo
+GitHub actions nous permet d’automatiser les commandes Shell du pyinstaller qui sert à créer l’exécutable de notre application. 
+Nous l’utilisons pour récupérer un fichier json dans un S3 AWS, puis pour lancer l’exécution du pyinstaller et enfin pour envoyer le .exe dans un nouveau bucket S3.
+
 ![github_action](https://github.com/solenemorais/projetjs/blob/main/github_action.png)
 ## Rétrospective projet - solene
