@@ -35,7 +35,7 @@ Les avantages que l’on peut retenir de ce service sont les suivants:
 - Son stockage économique  
 - Sa facilité à gérer les données et les contrôles d'accès  
 
-Nous utilisons des buckets S3 dans notre projet afin de stocker différentes sortes de fichiers envoyés par nos Lambda qui sont des "déclencheurs".
+Nous utilisons des buckets S3 dans notre projet afin de stocker différentes sortes de fichiers envoyés par nos Lambda qui sont des "déclencheurs". Ces bucket servent un peu d'intermédiaire entre nos Lambda et nous permettent de stocker les fichiers reçus et transformés. Par exemple, on aura un bucket S3 contenant les images de formulaire et un autre bucket contenant les json des positions des éléments de ces formulaires à la suite de l'exécution d'une Lambda.
 
 ### <span class="underline">GitHub Actions</span>
 GitHub actions nous permet d’automatiser les commandes Shell du pyinstaller qui sert à créer l’exécutable de notre application. 
@@ -45,7 +45,7 @@ GitHub actions nous a permis de contourner un problème les Lambda qui ne sont p
 ![github_action](https://github.com/solenemorais/projetjs/blob/main/github_action.png)
 ## <span class="underline">Rétrospective projet</span>
 
- Depuis le début de ce projet, nous avons appris beaucoup de chose que ce soit sur le plan technique comme sur celui de la gestion d’un tel projet.
+ Depuis le début de ce projet, nous avons appris beaucoup de chose que ce soit sur le plan technique ou sur le plan organisationnel.
 
  Nous avons été confrontés à plusieurs difficultés qui nous ont amenées à réfléchir, comprendre et trouver une solution. Nous avons compris qu’il fallait d’abord bien définir les étapes du projet ainsi que leur intérêt avant d’intégrer la pipeline à AWS. Un projet comme celui-ci nous a permis d’appliquer nos connaissances et d’approfondir les outils que nous avions déjà pu voir lors de notre scolarité. D’autre part, nous avons gagné en autonomie en nous forçant à d’abord chercher par nous même avant de demander de l’aide.
  
