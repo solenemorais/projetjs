@@ -8,14 +8,14 @@ L’avantage de cette architecture est de pouvoir isoler les fonctionnalités af
 Cela permet aussi d’augmenter le nombre de fonctionnalités en venant simplement rajouter un module. 
 
 #### EC2 - marie
-Amazon Elastic Compute Cloud ou EC2 est un service proposé par Amazon permettant à des tiers de louer des serveurs sur lesquels exécuter leurs propres applications web. EC2 permet un déploiement extensible des applications en fournissant une interface web par laquelle un client peut créer des machines virtuelles, c'est-à-dire des instances du serveur, sur lesquelles le client peut charger n'importe quel logiciel de son choix.
-Même si EC2 est un service de serveurs cloud rapides et fiables, un service scalable, et facile à gerer ; nous avons préféré utiliser le service S3 qui est également scalable et fiable mais qui prend beaucoup moins d’espace et qui est moins cher.
+Amazon Elastic Compute Cloud ou EC2 est un service proposé par Amazon permettant à des tiers de louer des serveurs sur lesquels exécuter leurs propres applications web. EC2 permet un déploiement extensible des applications en fournissant une interface web par laquelle un client peut créer des machines virtuelles, c'est-à-dire des instances du serveur, sur lesquelles le client peut charger n'importe quel logiciel de son choix.  
+Même si EC2 est un service de serveurs cloud **rapides et fiables**, un service **scalable**, et **facile à gerer** ; nous avons préféré utiliser le service S3 qui est également **scalable et fiable** mais qui prend beaucoup **moins d’espace et qui est moins cher**.
 
-#### Lambda - marie
+####<u> Lambda <u>
 AWS Lambda est un service informatique qui exécute du code en réponse à des événements et gère automatiquement les ressources informatiques requises par ce code. 
 Les avantages que l’on peut retenir de ce service sont les suivants :
 
-•	AWS Lambda gère toute l’infrastructure pour exécuter notre code. En plus d’être “server-less”, c’est-à-dire que nous n’avons pas à gérer de serveurs et que le code est exécuté automatiquement, ce service s’occupe du redimensionnement et de l’ajout de nouveaux serveurs lorsque l’application s’accroît.
+•	AWS Lambda gère toute l’infrastructure pour exécuter notre code. En plus d’être “server-less”, c’est-à-dire que nous n’avons pas à gérer de serveurs et que le code est exécuté automatiquement, ce service s’occupe du redimensionnement et de l’ajout de nouveaux serveurs lorsque l’application s’accroît.  
 •	AWS Lambda est peu coûteux pour une petite application, voire gratuit, lorsqu’on est en période d’essai. Les frais s’appliquent toutes les 100 ms d’exécution du code et selon le nombre de fois où il est déclenché. Ainsi, nous ne payons rien lorsque le code n'est pas exécuté.
 
 S3 et Lambda nous sont grandement utiles pour le traitement de fichier en temps réel.
