@@ -1,7 +1,7 @@
 # <span class="underline">Projet Client-serveur</span> 
 ## <span class="underline">Introduction</span> 
 
-Pour cette partie de la réalisation du projet, nous avions comme objectif de réaliser un pipeline.  Le processus devait nous permettre de récupérer une image, la traiter et la restituer sous forme de .exe.  Nous avons tout d’abord réalisé le pipeline en local sur notre IDE afin de bien identifier toutes les étapes. Cette première approche était primordiale avant de s’attaquer à la partie cloud.  Nous avons ensuite intégré notre pipeline au cloud d’Amazon AWS. Nous avons utilisé les lambdas et S3 pour la partie traitement de l’image et récupération des informations du document, puis GitHub Actions pour la partie création de l’exécutable.  Bien que ces missions nous semblassent simples au premier abord, nous nous sommes vite rendu compte de la complexité du cloud.  Aujourd’hui, nous sommes à mi-parcours de la réalisation du projet. Nous avons maintenant comme objectif de commencer la partie automatisation par l’intelligence artificielle.
+Pour cette partie de la réalisation du projet, nous avions comme objectif de réaliser un pipeline.  Le processus devait nous permettre de récupérer une image, la traiter et la restituer sous forme de .exe.  Nous avons tout d’abord réalisé le pipeline en local sur notre IDE afin de bien identifier toutes les étapes. Cette première approche était primordiale avant de s’attaquer à la partie cloud.  Nous avons ensuite intégré notre pipeline au cloud d’Amazon AWS. Nous avons utilisé les lambdas et S3 pour la partie traitement de l’image et récupération des informations du document, puis GitHub Actions pour la partie création de l’exécutable.  Bien que ces missions nous semblassent simples au premier abord, nous nous sommes vite rendu compte de la complexité du cloud.  
 
  ![shema pipeline](https://github.com/solenemorais/projetjs/blob/main/Capture%20d%E2%80%99e%CC%81cran%202021-01-28%20a%CC%80%2014.52.46.png)
 ###   <span class="underline">AWS</span>
@@ -35,7 +35,7 @@ Les avantages que l’on peut retenir de ce service sont les suivants:
 - Son stockage économique  
 - Sa facilité à gérer les données et les contrôles d'accès  
 
-Nous utilisons des buckets S3 dans notre projet afin de stocker différentes sortes de fichiers envoyes pars nos lambda qui sont des "déclencheurs".
+Nous utilisons des buckets S3 dans notre projet afin de stocker différentes sortes de fichiers envoyés par nos Lambda qui sont des "déclencheurs".
 
 ### <span class="underline">GitHub Actions</span>
 GitHub actions nous permet d’automatiser les commandes Shell du pyinstaller qui sert à créer l’exécutable de notre application. 
