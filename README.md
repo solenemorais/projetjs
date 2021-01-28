@@ -26,7 +26,17 @@ On peut utiliser Amazon S3 pour déclencher AWS Lambda afin que les données soi
 
  ![shema lambda](https://github.com/solenemorais/projetjs/blob/main/Capture%20d%E2%80%99e%CC%81cran%202021-01-28%20a%CC%80%2014.41.10.png)
 #### Bucket
-c'est une poche mais en anglais
+Amazon Simple Storage Service (Amazon S3) est un service de stockage d'objets offrant une évolutivité, une disponibilité des données, une sécurité et des performances de pointe. Les clients de toutes tailles et de tous secteurs peuvent ainsi utiliser ce service afin de stocker et protéger n'importe quelle quantité de données.  
+Les avantages que l’on peut retenir de ce service sont les suivants:
+
+- Ses performances  
+- Sa scabilité  
+- Sa disponibilité  
+- Sa durabilité de pointe  
+- Son stockage économique  
+- Sa facilité à gérer les données et les contrôles d'accès  
+
+Nous utilisons des buckets S3 dans notre projet afin de stocker différentes sortes de fichiers envoyes pars nos lambda qui sont des "déclencheurs".
 
 ### <span class="underline">GitHub Actions</span>
 GitHub actions nous permet d’automatiser les commandes Shell du pyinstaller qui sert à créer l’exécutable de notre application. 
