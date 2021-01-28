@@ -24,7 +24,7 @@ Les avantages que l’on peut retenir de ce service sont les suivants :
 S3 et Lambda nous sont grandement utiles pour le traitement de fichier en temps réel.
 On peut utiliser Amazon S3 pour déclencher AWS Lambda afin que les données soient immédiatement traitées après leur chargement. (Voir schéma ci-dessous)
 
- ![shema lambda](https://github.com/solenemorais/projetjs/blob/main/Capture%20d%E2%80%99e%CC%81cran%202021-01-28%20a%CC%80%2014.41.10.png)
+![shema lambda](https://github.com/solenemorais/projetjs/blob/main/Capture%20d%E2%80%99e%CC%81cran%202021-01-28%20a%CC%80%2014.41.10.png)
 #### Bucket
 Amazon Simple Storage Service (Amazon S3) est un service de stockage d'objets offrant une évolutivité, une disponibilité des données, une sécurité et des performances de pointe. Les clients de toutes tailles et de tous secteurs peuvent ainsi utiliser ce service afin de stocker et protéger n'importe quelle quantité de données.  
 Les avantages que l’on peut retenir de ce service sont les suivants:
@@ -41,6 +41,7 @@ Nous utilisons des buckets S3 dans notre projet afin de stocker différentes sor
 ### <span class="underline">GitHub Actions</span>
 GitHub actions nous permet d’automatiser les commandes Shell du pyinstaller qui sert à créer l’exécutable de notre application. 
 Nous l’utilisons pour récupérer un fichier json dans un S3 AWS, puis pour lancer l’exécution du pyinstaller et enfin pour envoyer le .exe dans un nouveau bucket S3.
+GitHub actions nous a permis de contourner un problème les Lambda qui ne sont pas adaptées pour effectuer les commandes shell utiles à la création de notre .exe. 
 
 ![github_action](https://github.com/solenemorais/projetjs/blob/main/github_action.png)
 ## <span class="underline">Rétrospective projet</span>
