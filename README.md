@@ -12,8 +12,5 @@
 c'est une poche mais en anglais
 
 ### GitHub Actions - theo
-<br>
-<img height="400" src="C:\Users\Théo C\Downloads\github_action.png" />
-<br>
-
+![github_action](https://github.com/solenemorais/projetjs/blob/main/github_action.png)
 ## Rétrospective projet - solene
