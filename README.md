@@ -1,13 +1,25 @@
 # Projet Client-serveur
 ## Technologies utilisées - theo
 --- schema ---- + courte intro
+ ![shema pipeline](https://github.com/solenemorais/projetjs/blob/main/Capture%20d%E2%80%99e%CC%81cran%202021-01-28%20a%CC%80%2014.52.46.png)
 ### AWS  
-- definition
-- pk aws (avantages)
+Afin de pouvoir déployer rapidement cette solution tout en gardant le contrôle. Nous avons choisi de faire appel à une **solution de cloud-computing avec AWS** notamment. Nous avons conteneurisé les différentes fonctionnalités de notre programme. Pour cela, nous avons utilisé les modules « **Lambda** » pour implémenter les fonctions, des module « **S3** » pour stocker les documents xlsx reçu et les xlsx après correction puis un module « DynamoDB » ou « RDS » pour la base de données qui sera à implémenter dans le futur. 
+L’avantage de cette architecture est de pouvoir isoler les fonctionnalités afin de les améliorer sans impacter le reste du processus. 
+Cela permet aussi d’augmenter le nombre de fonctionnalités en venant simplement rajouter un module. 
+
 #### EC2 - marie
 + cher + chiant
 #### Lambda - marie
- ![alt text](https://github.com/solenemorais/projetjs/blob/main/Capture%20d%E2%80%99e%CC%81cran%202021-01-28%20a%CC%80%2014.41.10.png)
+AWS Lambda est un service informatique qui exécute du code en réponse à des événements et gère automatiquement les ressources informatiques requises par ce code. 
+Les avantages que l’on peut retenir de ce service sont les suivants :
+
+•	AWS Lambda gère toute l’infrastructure pour exécuter notre code. En plus d’être “server-less”, c’est-à-dire que nous n’avons pas à gérer de serveurs et que le code est exécuté automatiquement, ce service s’occupe du redimensionnement et de l’ajout de nouveaux serveurs lorsque l’application s’accroît.
+•	AWS Lambda est peu coûteux pour une petite application, voire gratuit, lorsqu’on est en période d’essai. Les frais s’appliquent toutes les 100 ms d’exécution du code et selon le nombre de fois où il est déclenché. Ainsi, nous ne payons rien lorsque le code n'est pas exécuté.
+
+S3 et Lambda nous sont grandement utiles pour le traitement de fichier en temps réel.
+On peut utiliser Amazon S3 pour déclencher AWS Lambda afin que les données soient immédiatement traitées après leur chargement. (Voir schéma ci-dessous)
+
+ ![shema lambda](https://github.com/solenemorais/projetjs/blob/main/Capture%20d%E2%80%99e%CC%81cran%202021-01-28%20a%CC%80%2014.41.10.png)
 #### Bucket - solene
 c'est une poche mais en anglais
 
