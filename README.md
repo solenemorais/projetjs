@@ -12,6 +12,8 @@
 c'est une poche mais en anglais
 
 ### GitHub Actions - theo
-![alt text](Downloads/github_action.png)
+<br>
+<img height="700" src="Downloads/github_action.png" />
+<br>
 
 ## Rétrospective projet - solene
