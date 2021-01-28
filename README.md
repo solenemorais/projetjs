@@ -7,7 +7,7 @@
 #### EC2 - marie
 + cher + chiant
 #### Lambda - marie
-
+ ![alt text](https://github.com/solenemorais/projetjs/blob/main/Capture%20d%E2%80%99e%CC%81cran%202021-01-28%20a%CC%80%2014.41.10.png)
 #### Bucket - solene
 c'est une poche mais en anglais
 
