@@ -13,7 +13,7 @@ c'est une poche mais en anglais
 
 ### GitHub Actions - theo
 <br>
-<img height="700" src="C:\Users\Théo C\Downloads\github_action.png" />
+<img height="400" src="C:\Users\Théo C\Downloads\github_action.png" />
 <br>
 
 ## Rétrospective projet - solene
