@@ -44,3 +44,11 @@ GitHub actions nous a permis de contourner un problème les Lambda qui ne sont p
 
 ![github_action](https://github.com/solenemorais/projetjs/blob/main/github_action.png)
 ## <span class="underline">Rétrospective projet</span>
+
+ Depuis le début de ce projet, nous avons appris beaucoup de chose que ce soit sur le plan technique comme sur celui de la gestion d’un tel projet.
+
+ Nous avons été confrontés à plusieurs difficultés qui nous ont amenées à réfléchir, comprendre et trouver une solution. Nous avons compris qu’il fallait d’abord bien définir les étapes du projet ainsi que leur intérêt avant d’intégrer la pipeline à AWS. Un projet comme celui-ci nous a permis d’appliquer nos connaissances et d’approfondir les outils que nous avions déjà pu voir lors de notre scolarité. D’autre part, nous avons gagné en autonomie en nous forçant à d’abord chercher par nous même avant de demander de l’aide.
+ 
+ Travailler pour une start-up comme AvekIA est stimulant. Nous développons sans cesse notre esprit d’équipe et avons un réel sentiment d’appartenance à la communauté AvekIA. Pierre et Aymeric sont très disponible pour répondre à nos questions et nous aider, ce qui représentait un réel atout. Nous avons découvert les avantages et libertés d’une structure plus petite. Nous n’avons pas peur d’exprimer nos idées ou de prendre des responsabilités. Nous sommes tout le temps en train de tester, analyser et remettre en question nos choix ce qui nous amène à sans cesse innover et ne jamais nous ennuyer.
+ 
+ A mi-parcours du projet de fin d’études, nous pouvons dire que nous avons terminé toute la structure ce celui-ci. Nous avons rempli les objectifs à atteindre pour cette première partie et sommes prêt à attaquer la partie Intelligence Artificielle.
