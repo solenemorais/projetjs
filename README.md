@@ -5,13 +5,17 @@ Pour cette partie de la réalisation du projet, nous avions comme objectif de r�
 
  ![shema pipeline](https://github.com/solenemorais/projetjs/blob/main/Capture%20d%E2%80%99e%CC%81cran%202021-01-28%20a%CC%80%2014.52.46.png)
 ###   <span class="underline">AWS</span>
-Afin de pouvoir déployer rapidement cette solution tout en gardant le contrôle. Nous avons choisi de faire appel à une **solution de cloud-computing avec AWS** notamment. Nous avons conteneurisé les différentes fonctionnalités de notre programme. Pour cela, nous avons utilisé les modules « **Lambda** » pour implémenter les fonctions, des module « **S3** » pour stocker les documents xlsx reçu et les xlsx après correction puis un module « DynamoDB » ou « RDS » pour la base de données qui sera à implémenter dans le futur. 
+Afin de pouvoir déployer rapidement cette solution tout en gardant le contrôle. Nous avons choisi de faire appel à une **solution de cloud-computing avec AWS** notamment. Nous avons conteneurisé les différentes fonctionnalités de notre programme.
+
+Pierre connait bien AWS et les fonctionnalités du service. Il avait déjà réalisé plusieurs projets grâce à AWS et était en mesure de nous expliquer le fonctionnement, la facturation et l'intérêt que représentait une solution comme celle-ci. Pour le projet, AWS était la solution : on allait pouvoir automatiser tout le projet simplement et proprement.
+
+Pour cela, nous avons utilisé les modules « **Lambda** » pour implémenter les fonctions, des module « **S3** » pour stocker les documents xlsx reçu et les xlsx après correction puis un module « DynamoDB » ou « RDS » pour la base de données qui sera à implémenter dans le futur. 
 L’avantage de cette architecture est de pouvoir isoler les fonctionnalités afin de les améliorer sans impacter le reste du processus. 
 Cela permet aussi d’augmenter le nombre de fonctionnalités en venant simplement rajouter un module. 
 
 #### <span class="underline">EC2</span>
-Amazon Elastic Compute Cloud ou EC2 est un service proposé par Amazon permettant à des tiers de louer des serveurs sur lesquels exécuter leurs propres applications web. EC2 permet un déploiement extensible des applications en fournissant une interface web par laquelle un client peut créer des machines virtuelles, c'est-à-dire des instances du serveur, sur lesquelles le client peut charger n'importe quel logiciel de son choix.  
-Même si EC2 est un service de serveurs cloud **rapides et fiables**, un service **scalable**, et **facile à gerer** ; nous avons préféré utiliser le service S3 qui est également **scalable et fiable** mais qui prend beaucoup **moins d’espace et qui est moins cher**.
+Avant de se lancer dans une succession de lambda et de bucket, on connaissait l'existence de EC2 sur AWS. Amazon Elastic Compute Cloud ou EC2 est un service proposé par Amazon grâce auquel on aurait pu louer des serveurs et exécuter notre propre application web dessus. EC2 nous aurait permis de déployer notre application en fournissant une interface web. On aurait pu créer des machines virtuelle, c'est-à-dire des instances du serveur, sur lesquelles on aurait pu charger n'importe quel logiciel de notre choix.
+EC2 est un service de serveurs cloud **rapides et fiables**, un service **scalable**, et **facile à gerer**. Nous avons préféré utiliser le service S3 qui est également **scalable et fiable** mais qui prend beaucoup **moins d’espace et qui est moins cher**.
 
 #### <span class="underline">Lambda</span> 
 AWS Lambda est un service informatique qui exécute du code en réponse à des événements et gère automatiquement les ressources informatiques requises par ce code. 
