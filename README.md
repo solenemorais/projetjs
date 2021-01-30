@@ -9,13 +9,14 @@ Afin de pouvoir déployer rapidement cette solution tout en gardant le contrôle
 
 Pierre connait bien AWS et les fonctionnalités du service. Il avait déjà réalisé plusieurs projets grâce à AWS et était en mesure de nous expliquer le fonctionnement, la facturation et l'intérêt que représentait une solution comme celle-ci. Pour le projet, AWS était la solution : on allait pouvoir automatiser tout le projet simplement et proprement.
 
-Pour cela, nous avons utilisé les modules « **Lambda** » pour implémenter les fonctions, des module « **S3** » pour stocker les documents xlsx reçu et les xlsx après correction puis un module « DynamoDB » ou « RDS » pour la base de données qui sera à implémenter dans le futur. 
+Pour cela, nous avons utilisé les modules « **Lambda** » pour implémenter les fonctions, des module « **S3** » pour stocker les documents xlsx reçu et les xlsx après correction puis un module « DynamoDB » ou « RDS » pour la base de données qui sera à implémenter dans le futur.
 L’avantage de cette architecture est de pouvoir isoler les fonctionnalités afin de les améliorer sans impacter le reste du processus. 
 Cela permet aussi d’augmenter le nombre de fonctionnalités en venant simplement rajouter un module. 
 
 #### <span class="underline">EC2</span>
 Avant de se lancer dans une succession de lambda et de bucket, on connaissait l'existence de EC2 sur AWS. Amazon Elastic Compute Cloud est un service proposé par Amazon grâce auquel on aurait pu louer des serveurs et exécuter notre propre application web dessus. EC2 nous aurait permis de déployer notre application en fournissant une interface web. On aurait pu créer des machines virtuelle, c'est-à-dire des instances du serveur, sur lesquelles on aurait pu charger n'importe quel logiciel de notre choix.
-EC2 est un service de serveurs cloud **rapides et fiables**, un service **scalable**, et **facile à gerer**.  
+EC2 est un service de serveurs cloud **rapides et fiables**, un service **scalable**, et **facile à gerer**.
+
 A première vue EC2 semblait une solution idéale pour AvekIA et structurer l'application. Cependant, pour Pierre, il existait un autre moyen d'intégrer notre application au cloud AWS. Il nous a alors expliqué que notre projet était réalisable via le service S3 et les Lambda. Le service S3 et les lambdas, également **scalable et fiable**, nous permetterait de faire exactement la même chose que sur EC2 mais en prenant beaucoup moins d'espace et en nous coûtant moins cher. POur une start-up, il est important d'évaluer le prix des solutions et de toujours essayer de trouver le mieux et le moins cher.
 
 
