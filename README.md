@@ -14,7 +14,7 @@ L’avantage de cette architecture est de pouvoir isoler les fonctionnalités af
 Cela permet aussi d’augmenter le nombre de fonctionnalités en venant simplement rajouter un module. 
 
 #### <span class="underline">EC2</span>
-Avant de se lancer dans une succession de lambda et de bucket, on connaissait l'existence de EC2 sur AWS. Amazon Elastic Compute Cloud ou EC2 est un service proposé par Amazon grâce auquel on aurait pu louer des serveurs et exécuter notre propre application web dessus. EC2 nous aurait permis de déployer notre application en fournissant une interface web. On aurait pu créer des machines virtuelle, c'est-à-dire des instances du serveur, sur lesquelles on aurait pu charger n'importe quel logiciel de notre choix.
+Avant de se lancer dans une succession de lambda et de bucket, on connaissait l'existence de EC2 sur AWS. Amazon Elastic Compute Cloud est un service proposé par Amazon grâce auquel on aurait pu louer des serveurs et exécuter notre propre application web dessus. EC2 nous aurait permis de déployer notre application en fournissant une interface web. On aurait pu créer des machines virtuelle, c'est-à-dire des instances du serveur, sur lesquelles on aurait pu charger n'importe quel logiciel de notre choix.
 EC2 est un service de serveurs cloud **rapides et fiables**, un service **scalable**, et **facile à gerer**. Nous avons préféré utiliser le service S3 qui est également **scalable et fiable** mais qui prend beaucoup **moins d’espace et qui est moins cher**.
 
 #### <span class="underline">Lambda</span> 
