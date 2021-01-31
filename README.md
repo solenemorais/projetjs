@@ -52,7 +52,6 @@ Parmi les nombreuses solutions existantes nous nous sommes tournés vers GitHub 
 
   GitHub actions nous permet donc d’automatiser les commandes Shell du pyinstaller qui sert à créer l’exécutable de notre application. 
 Nous l’utilisons pour récupérer un fichier json dans un S3 AWS, puis pour lancer l’exécution du pyinstaller et enfin pour envoyer le .exe dans un nouveau bucket S3.  
-GitHub actions nous a permis de contourner un problème les Lambda qui ne sont pas adaptées pour effectuer les commandes shell utiles à la création de notre .exe. 
 
 ![github_action](https://github.com/solenemorais/projetjs/blob/main/github_action.png)
 ## <span class="underline">Rétrospective projet</span>
