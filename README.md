@@ -45,7 +45,12 @@ Les avantages que l’on peut retenir de ce service sont les suivants:
 Nous utilisons des buckets S3 dans notre projet afin de stocker différentes sortes de fichiers envoyés par nos Lambda qui sont des "déclencheurs". Ces bucket servent un peu d'intermédiaire entre nos Lambda et nous permettent de stocker les fichiers reçus et transformés. Par exemple, on aura un bucket S3 contenant les images de formulaire et un autre bucket contenant les json des positions des éléments de ces formulaires à la suite de l'exécution d'une Lambda.
 
 ### <span class="underline">GitHub Actions</span>
-GitHub actions nous permet d’automatiser les commandes Shell du pyinstaller qui sert à créer l’exécutable de notre application. 
+Une fois les étapes du traitement de l’image passés, nous avons besoin de créer un exécutable pour que notre client puisse se servir de son application.
+Dans un premier temps nous avions continué nos manipulations sur les lambdas AWS mais cette étape s’est avérée compliqué à réaliser car il y avait des conflits lors de l’installation de certaines dépendances.
+Après réflexion et sur les conseils de Robinou <3, nous avons décidé de nous tourner vers une méthode CI. L’intégration continue est un ensemble de pratiques consistant à tester de manière automatisée chaque révision de code avant de le déployer en production. 
+Parmi les nombreuses solutions existantes nous nous sommes tournés vers GitHub Actions car AvekIA possédait déjà un repo et l’environnement nous était déjà familier. De plus GitHub Actions propose un market avec des exemples de code d’autres utilisateurs que nous pouvons reprendre pour nous en servir dans notre cas d’utilisation. 
+
+  GitHub actions nous permet donc d’automatiser les commandes Shell du pyinstaller qui sert à créer l’exécutable de notre application. 
 Nous l’utilisons pour récupérer un fichier json dans un S3 AWS, puis pour lancer l’exécution du pyinstaller et enfin pour envoyer le .exe dans un nouveau bucket S3.  
 GitHub actions nous a permis de contourner un problème les Lambda qui ne sont pas adaptées pour effectuer les commandes shell utiles à la création de notre .exe. 
 
