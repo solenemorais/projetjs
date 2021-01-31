@@ -21,7 +21,7 @@ A première vue EC2 semblait une solution idéale pour AvekIA et structurer l'ap
 
 
 #### <span class="underline">Lambda</span> 
-AWS Lambda est un service informatique qui exécute du code en réponse à des événements et gère automatiquement les ressources informatiques requises par ce code. 
+Afin de bien structurer notre projet et de gerer automatiquement notre 'pipeline' nous avons choisis d'utiliser une lambda par fonction. Par exemple une lambda pour la fonction detection des cases dans le formulaire, une autre pour transposer le formulaire en application, etc.AWS Lambda est donc comme vous avez pu le comprendre un service informatique qui exécute du code en réponse à des événements et gère automatiquement les ressources informatiques requises par ce code. 
 Les avantages que l’on peut retenir de ce service sont les suivants :
 
 •	AWS Lambda gère toute l’infrastructure pour exécuter notre code. En plus d’être “server-less”, c’est-à-dire que nous n’avons pas à gérer de serveurs et que le code est exécuté automatiquement, ce service s’occupe du redimensionnement et de l’ajout de nouveaux serveurs lorsque l’application s’accroît.  
@@ -32,7 +32,7 @@ On peut utiliser Amazon S3 pour déclencher AWS Lambda afin que les données soi
 
 ![shema lambda](https://github.com/solenemorais/projetjs/blob/main/Capture%20d%E2%80%99e%CC%81cran%202021-01-28%20a%CC%80%2014.41.10.png)
 #### Bucket
-Amazon Simple Storage Service (Amazon S3) est un service de stockage d'objets offrant une évolutivité, une disponibilité des données, une sécurité et des performances de pointe. Les clients de toutes tailles et de tous secteurs peuvent ainsi utiliser ce service afin de stocker et protéger n'importe quelle quantité de données.  
+Chaque lambda marche comme un déclencheur d'un 'bucket' de stockage, ici Amazon S3. Ce service est un service de stockage d'objets offrant une évolutivité, une disponibilité des données, une sécurité et des performances de pointe. C'est pour cela que nous avons choisis d'utiliser ce service afin de stocker et protéger n'importe quelle quantité de données (dans notre projet cela va de la simple image a l'executable de l'application).
 Les avantages que l’on peut retenir de ce service sont les suivants:
 
 - Ses performances  
